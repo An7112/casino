@@ -31,8 +31,9 @@ ul{
 }
 :root {
   --main-major: #55B9A9;
+  --bg-button: #caab72;
   --bg-contrast: #2a2d3e;
-  --bg-main: #1a1c29;
+  --bg-main: #1a202c;
   --main-bg: white;
   --text-color: white;
   --text-blur: #a9aaac;

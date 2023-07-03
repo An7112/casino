@@ -1,0 +1,144 @@
+.header-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+    background-color: #1a202c;
+    padding: 12px 0;
+}
+
+.header-main .header-frame {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+.header__lang {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    height: 40px;
+    justify-content: center;
+    gap: 12px;
+    border-radius: 6px;
+    background-color: #383e4d;
+}
+
+.header__lang img {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+
+.header__lang span {
+    white-space: nowrap;
+    font-size: 14px;
+    overflow: hidden;
+    color: white;
+    text-overflow: ellipsis;
+}
+
+.header__button-auth {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    padding: 0 24px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid white;
+    background-color: #1a202c;
+}
+
+.header__button-auth span {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.header__button-auth.rigister {
+    background-color: var(--bg-button);
+    border: none;
+}
+
+.header__button-auth.rigister span {
+    color: black;
+}
+
+.header__group-items {
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.header__item {
+    height: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+
+.header__item a {
+    font-size: 14px;
+    letter-spacing: 0.235px;
+    line-height: 20px;
+    padding: 14px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 935px) {
+    .header__group-items {
+        display: none;
+    }
+
+    .header__logo img{
+        width: 100px;
+    }
+
+    .header__button-auth{
+        padding: 0 12px;
+        height: 30px;
+    }
+
+    .header__button-auth span{
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .header__lang {
+        display: none;
+    }
+}
+
+@media (max-width: 280px) {
+    .header__logo img{
+        width: 80px;
+    }
+
+    .header__button-auth{
+        padding: 0 6px;
+        height: 24px;
+    }
+
+    .header__button-auth span{
+        font-size: 8px;
+    }
+}

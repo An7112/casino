@@ -3,7 +3,8 @@ import './header.css'
 
 export default function Header() {
     return (
-        <div className='header-main'>
+        <div className='frame-header'>
+            <div className='header-main'>
             <div className='header-frame left'>
                 <a className='header__logo' href='/'>
                     <img src="https://www.m88hl.com/~/static/images/mlogo-desktop.svg" alt="home" />
@@ -45,6 +46,7 @@ export default function Header() {
                     <span>REGISTER</span>
                 </button>
             </div>
+        </div>
         </div>
     )
 }

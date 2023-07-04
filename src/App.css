@@ -7,11 +7,10 @@
   display: flex;
   background-color: var(--bg-main);
   flex-direction: column;
-  width: 1200px;
-  padding: 0 32px;
-  max-width: 100%;
   min-height: 100vh;
   margin: 0 auto;
+  width: 100%;
+  /* padding: 0 18px; */
   overflow: hidden;
   position: relative;
 }

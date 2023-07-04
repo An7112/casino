@@ -4,6 +4,7 @@ import './App.css';
 import Header from './component/header/header';
 
 import Home from './pages/home/home';
+import Footer from './component/footer/footer';
 
 function App() {
 
@@ -16,8 +17,7 @@ function App() {
           <Route path='/' element={<Navigate to='/home' />} />
           <Route path='/home' element={<Home/>} />
         </Routes>
-        <div className='footer'></div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </div>
   </BrowserRouter>

@@ -9,6 +9,10 @@ export default function Header() {
         <div className='frame-header'>
             <div className='header-main'>
                 <div className='header-frame left'>
+                    <div className='padding-logo'>
+                    <img src='/media/mosalogo.jpg' />
+                        <div className='line-header'></div>
+                    </div>
                     <a className='header__logo' href='/'>
                         <img src="https://www.m88hl.com/~/static/images/mlogo-desktop.svg" alt="home" />
                     </a>

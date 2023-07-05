@@ -31,12 +31,12 @@
   align-content: center;
   justify-content: center;
   max-width: 50%;
-  padding: 20px;
   color: white;
 }
 
 .carousel-icon {
-  width: 100px;
+  width: 240px;
+  max-width: 50%;
   height: auto;
   display: block;
   margin-bottom: 10px;
@@ -61,15 +61,19 @@
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--bg-button);
+  color: black;
   font-size: 18px;
+  font-weight: 600;
+  max-width: 180px;
+  margin-top: 12px;
+  border-radius: 100px;
   border: none;
   cursor: pointer;
 }
 
 .button-primary {
-  background-color: #007bff;
+  background-color: var(--bg-button);
 }
 
 /* aaa */
@@ -120,9 +124,111 @@
   color: var(--bg-button);
 }
 
+.list-dots{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 1rem;
+  top: -1rem;
+}
+
+.slider-action.bot{
+  bottom: 5%;
+  top: 90%;
+}
+
+.slider-action.bot.prev{
+  left: 90%;
+}
+
+.list-dots li{
+  width: 40px;
+  height: 2px;
+  background-color: var(--bg-button);
+}
+
+.list-dots li button{
+  display: none;
+}
+
+.list-dots .slick-active{
+  background-color: white;
+}
+.user-info {
+  height: 100%;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+.user-info svg{
+  font-size: 28px;
+  color: white;
+}
+
+.big.dsc{
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 1190px) {
+  .carousel-item-content{
+    margin-right: 0.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .carousel-icon{
+      width: 180px;
+  }
+  .carousel-item-content{
+    margin-right: 0.5rem;
+  }
+  .carousel-item-content > span {
+    font-size: 14px;
+  }
+
+  .carousel-item-content img{
+    margin-bottom: 5px;
+  }
+
+  .carousel-item-content button{
+    width: 100px;
+    font-size: 10px;
+  }
+}
 
 @media (max-width: 768px) {
   .carousel-item-content{
       margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel-icon{
+    width: 80px;
+  }
+  .carousel-item-content span{
+    font-size: 14px;
+  }
+  .carousel-item-content .button{
+    padding: 6px 14px;
+  }
+}
+
+@media (max-width: 330px) {
+  .carousel-icon{
+    width: 50px;
+  }
+  .carousel-item-content span{
+    font-size: 10px;
+  }
+  .carousel-item-content .button{
+    font-size: 10px;
+    padding: 6px 14px;
+  }
+}
+
+
+@media (max-width: 965px) {
+  .slider-action.banner{
+      display: none;
   }
 }

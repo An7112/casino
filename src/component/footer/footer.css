@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 34px;
-    margin-bottom: 18px;
+    /* margin-bottom: 18px; */
 }
 
 .page__table.after {
@@ -68,6 +68,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    height: 100%;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -114,7 +116,7 @@
 }
 
 .footer-top .page__table{
-    padding: 24px 14px 14px 14px;
+    padding: 24px 14px 24px 14px;
     gap: 16px;
 }
 
@@ -139,6 +141,45 @@
     color: white;
 }
 
+.gr-footer-center{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+}
+
+.gr-footer-center h3{
+    font-size: 16px;
+    font-weight: 500;
+    color: #A7A9B0;
+}
+
+.gr-footer-center .spn-flex{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.gr-footer-center .spn-flex .sponsor{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+}
+
+.sponsor-info{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.sponsor-info span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #A7A9B0;
+}
 @media (max-width: 820px) {
     .footer-content {
         grid-template-columns: repeat(6, minmax(0, 1fr));

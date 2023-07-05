@@ -1,11 +1,11 @@
 .container {
   display: flex;
   flex-direction: row;
-  background-color: var(--bg-main);
+  background-color: #1a202c;
 }
 .main {
   display: flex;
-  background-color: var(--bg-main);
+  background-color: #1a202c;
   flex-direction: column;
   min-height: 100vh;
   margin: 0 auto;

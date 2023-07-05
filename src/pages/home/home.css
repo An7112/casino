@@ -1,15 +1,15 @@
-.page-main{
+.page-main {
     display: flex;
     position: relative;
     flex-direction: column;
     background-color: #f4f4f5;
 }
 
-.page-main.after{
+.page-main.after {
     background-color: white;
 }
 
-.page__table{
+.page__table {
     display: flex;
     margin: 0 auto;
     padding: 14px;
@@ -20,18 +20,18 @@
     margin-bottom: 18px;
 }
 
-.page__table.after{
+.page__table.after {
     align-items: center;
     justify-content: center;
 }
 
-.page__title{
+.page__title {
     font-size: 24px;
     font-weight: 500;
     margin-top: 34px;
 }
 
-.page__title.bd::after{
+.page__title.bd::after {
     content: "";
     background-color: var(--bg-button);
     display: flex;
@@ -40,61 +40,244 @@
     margin-top: 12px;
 }
 
-.footer-content{
+.footer-content {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 48px;
 }
 
-.footer-content .footer-content__item{
+.footer-content .footer-content__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
 }
 
-.footer-content__item img{
+.footer-content__item img {
     max-width: 178px;
     object-fit: contain;
 }
 
-.footer-content__item span{
+.footer-content__item span {
     font-size: 14px;
     font-weight: 550;
 }
 
-.footer-content__item p{
+.footer-content__item p {
     font-size: 12px;
     font-weight: 400;
 }
 
+/*  */
+
+.page__table area {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    position: relative;
+}
+
+.area .title-component {
+    position: relative;
+}
+
+.title-component .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title-component .flex-row span{
+    color: black;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+}
+
+.title-component .flex-row a span{
+    font-size: 16px;
+    color: #4E5461;
+}
+
+.title-component .flex-row .title:not(.no-decoration):after {
+    content: "";
+    background-color: var(--bg-button);
+    display: flex;
+    width: 24px;
+    height: 2px;
+    margin-top: 12px;
+    z-index: 9;
+}
+
+.odds-component {
+    position: relative;
+    min-height: 150px;
+    margin: 0px auto;
+}
+
+#sports-highlight{
+    top: 148px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.odds-component::before {
+    content: '';
+    display: none;
+    position: absolute;
+    height: 420px;
+    bottom: 32px;
+    left: -190%;
+    background: #fff;
+    width: calc(200vw - 24px);
+    left: -100vw;
+}
+
+.odds-cards-wrap {
+    background-image: url(https://www.m88hl.com/~/static/images/home-page/upcoming-events/background/msports_EN.png);
+    background-color: white;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    margin-bottom: 32px;
+    height: 440px;
+}
+
+.title-component .title-image {
+    position: absolute;
+    left: 210px !important;
+    top: -65px !important;
+}
+
+.grid-table{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+.sportsbook-section.banner{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    position: relative;
+}
+.grid-table .grid-item{
+    position: relative;
+    grid-column: span 1 / span 1;
+}
+
+.grid-table .grid-item img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.mobile-download-image {
+    bottom: 0;
+    z-index: 1;
+    position: absolute !important;
+}
+
+.ml-16 {
+    margin-left: 16px !important;
+}
+
+.frame-banner{
+    height: 140px;
+    padding-left: 343px;
+    background-color: #383e4d;
+    border-radius: 12px;
+    border-radius: 16px;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.flex-column span{
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+.flex-column .color-secondary{
+    color: #caab72;
+}
+
+.flex-row.no-between{
+    justify-content: space-around;
+}
+
+.flex-no-between{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    padding: 0 32px;
+}
+
 @media (max-width: 820px) {
-    .footer-content{
+    .footer-content {
         grid-template-columns: repeat(6, minmax(0, 1fr));
     }
 
-    .footer-content .footer-content__item.col-3{
+    .footer-content .footer-content__item.col-3 {
         grid-column: span 3 / span 3;
     }
-    .footer-content .footer-content__item{
+    .footer-content .footer-content__item {
         grid-column: span 2 / span 2;
     }
-  }
+}
 
-  @media (max-width: 635px) {
-    .footer-content{
+@media (max-width: 635px) {
+    .footer-content {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    .footer-content .footer-content__item{
+    .footer-content .footer-content__item {
         grid-column: span 1 / span 1;
     }
-    .footer-content .footer-content__item.col-3{
+    .footer-content .footer-content__item.col-3 {
         grid-column: span 1 / span 1;
     }
-  }
+}
 
-  @media (max-width: 445px) {
-    .footer-content{
+@media (max-width: 445px) {
+    .footer-content {
         grid-template-columns: 1fr;
     }
-  }
+    .grid-table{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 615px){
+    .title-component .title-image{
+        left: 48% !important;
+        width: 80px;
+        height: 80px;
+        top: -45px !important;
+    }
+}
+
+@media (min-width: 1365.5px) {
+    .area .title-component {
+        z-index: 1;
+    }
+    .odds-cards-wrap {
+        height: 440px;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 1046px) {
+    .sportsbook-section.banner {
+        display: none;
+    }
+}
+.odds-cards-wrap {
+    background-image: url(https://www.m88hl.com/~/static/images/home-page/upcoming-events/background/msports_EN.png);
+    background-repeat: no-repeat;
+    margin-bottom: 32px;
+    height: 440px;
+}

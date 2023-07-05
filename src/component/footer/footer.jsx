@@ -1,11 +1,11 @@
 import React from 'react'
-import { 
+import {
     FaFacebookSquare,
-     FaWhatsappSquare,
-     FaInstagramSquare,
-     FaTwitterSquare,
-     FaYoutubeSquare
-     } from 'react-icons/fa';
+    FaWhatsappSquare,
+    FaInstagramSquare,
+    FaTwitterSquare,
+    FaYoutubeSquare
+} from 'react-icons/fa';
 import './footer.css'
 
 export default function Footer() {
@@ -71,9 +71,9 @@ export default function Footer() {
                         <div className='flex-row-item'>
                             <FaWhatsappSquare className='icons' />
                             <FaFacebookSquare className='icons' />
-                            <FaInstagramSquare className='icons'/>
-                            <FaTwitterSquare className='icons'/>
-                            <FaYoutubeSquare className='icons'/>
+                            <FaInstagramSquare className='icons' />
+                            <FaTwitterSquare className='icons' />
+                            <FaYoutubeSquare className='icons' />
                         </div>
                     </div>
                     <div className='flex-row links'>
@@ -96,6 +96,43 @@ export default function Footer() {
                         <a className='footer-link'>M88 Vietnam</a>
                         <a className='footer-link'>M88</a>
                         <a className='footer-link'>Bhs Indonesia</a>
+                    </div>
+                </div>
+            </div>
+            <div className='page-main footer-top' style={{ backgroundColor: '#222939' }}>
+                <div className='page__table'>
+                    <div className='gr-footer-center'>
+                        <h3>OUR PREVIOUS SPONSORSHIPS</h3>
+                        <div className='spn-flex'>
+                            <div className='sponsor'>
+                                <img class="sponsor-image" src="https://www.m88hl.com/~/static/images/footer/previous-sponsorships/bournemouth.svg?build=2.67.1.2362.bec992e9f5ef148586853ee7c039f43f11c2fd39-145870" />
+                                <div className='sponsor-info'>
+                                    <span>AFC Bournemouth</span>
+                                    <span>2015 - 2020</span>
+                                </div>
+                            </div>
+                            <div className='sponsor'>
+                                <img class="sponsor-image" src="https://www.m88hl.com/~/static/images/footer/previous-sponsorships/crystal-palace.svg?build=2.67.1.2362.bec992e9f5ef148586853ee7c039f43f11c2fd39-145870" />
+                                <div className='sponsor-info'>
+                                    <span>Crystal Palace</span>
+                                    <span>2015 - 2017</span>
+                                </div>
+                            </div>
+                            <div className='sponsor'>
+                                <img class="sponsor-image" src="https://www.m88hl.com/~/static/images/footer/previous-sponsorships/manchester-city.svg?build=2.67.1.2362.bec992e9f5ef148586853ee7c039f43f11c2fd39-145870" />
+                                <div className='sponsor-info'>
+                                    <span>Manchester City</span>
+                                    <span>2011 - 2012</span>
+                                </div>
+                            </div>
+                            <div className='sponsor'>
+                                <img class="sponsor-image" src="https://www.m88hl.com/~/static/images/footer/previous-sponsorships/tottenham-hotspur.svg?build=2.67.1.2362.bec992e9f5ef148586853ee7c039f43f11c2fd39-145870" />
+                                <div className='sponsor-info'>
+                                    <span>Tottenham Hotspur</span>
+                                    <span>2006 - 2010</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

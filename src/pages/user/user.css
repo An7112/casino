@@ -1,0 +1,28 @@
+.page-container-user{
+    margin-top: 72px;
+    width: 100%;
+    background-color: #f4f4f5;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-user__content{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 14px;
+}
+
+.list-link-user{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding: 12px 0;
+}
+
+.header__group-items.profile{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

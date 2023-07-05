@@ -18,7 +18,7 @@
     background-size: contain;
 }
 
-.list-item .item .item__info-box{
+.item__info-box{
     position: absolute;
     bottom: 0;
     display: flex;

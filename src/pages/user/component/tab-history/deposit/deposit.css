@@ -1,0 +1,51 @@
+.history-grid{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    width: 100%;
+    gap: 32px;
+}
+
+.history-grid .grid-item{
+    grid-column: span 2 /span 2;
+    display: flex;
+    align-items: center;
+}
+
+.button-tab-submmit.update.grid{
+    grid-column: span 2/span 2;
+}
+
+.button-tab-submmit.update.grid{
+    margin-right: auto;
+    margin-left: 0;
+    min-width: 160px;
+}
+
+@media (min-width: 850px) {
+    .input-lable.grid{
+        width: 140px
+    }
+}
+
+@media (max-width: 850px) {
+    .history-grid{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .input-lable{
+        width: 250px
+    }
+}
+
+@media (max-width: 550px) {
+    .input-lable{
+        width: 150px
+    }
+}
+
+
+@media (max-width: 400px) {
+    .input-lable{
+        width: 20%
+    }
+}

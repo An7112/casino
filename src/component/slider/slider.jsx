@@ -43,7 +43,7 @@ const SliderComponent = () => {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     appendDots: (dots) => (
       <div>
         <ul className='list-dots'>

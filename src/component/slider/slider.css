@@ -10,6 +10,10 @@
   margin: 0 auto;
 }
 
+.slider-container.single{
+  max-width: 400px;
+}
+
 .slider-img {
   width: 100%;
   height: auto;

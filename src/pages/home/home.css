@@ -88,16 +88,16 @@
     justify-content: space-between;
 }
 
-.title-component .flex-row span{
+.title-component .flex-row span {
     color: black;
     font-weight: 500;
     font-size: 24px;
     margin: 0;
 }
 
-.title-component .flex-row a span{
+.title-component .flex-row a span {
     font-size: 16px;
-    color: #4E5461;
+    color: #4e5461;
 }
 
 .title-component .flex-row .title:not(.no-decoration):after {
@@ -116,14 +116,14 @@
     margin: 0px auto;
 }
 
-#sports-highlight{
+#sports-highlight {
     top: 148px;
     max-width: 100%;
     position: absolute;
     bottom: 0;
 }
 .odds-component::before {
-    content: '';
+    content: "";
     display: none;
     position: absolute;
     height: 420px;
@@ -141,6 +141,72 @@
     /* background-size: contain; */
     margin-bottom: 32px;
     height: 440px;
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+}
+
+.cards-wrap {
+    background-color: white;
+    border-radius: 8px;
+    padding: 12px;
+    top: 12px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url(/public/media/messi.jpg);
+    max-width: 300px;
+    width: 300px;
+    object-fit: contain;
+    margin-bottom: 3rem;
+    height: 208px;
+    background-size: contain;
+    align-items: center;
+    gap: 12px;
+    -webkit-box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.466);
+    box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.466);
+}
+
+.cards-wrap.bottom{
+    bottom: 45%;
+    right: 12%;
+}
+
+.cards-wrap-absolute{
+    position: absolute;
+    width: 200px;
+    bottom: -1rem;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 100px;
+    -webkit-box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.466);
+    box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.466);
+    background-color: white;
+    border-radius: 6px;
+}
+
+.cards-wrap-absolute .card-title{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(84, 120, 134);
+}
+
+.cards-wrap-absolute p {
+    font-size: 12px;
+    font-weight: bold;
+    max-width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black;
 }
 
 .title-component .title-image {
@@ -149,24 +215,24 @@
     top: -65px !important;
 }
 
-.grid-table{
+.grid-table {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
 }
-.sportsbook-section.banner{
+.sportsbook-section.banner {
     width: 100%;
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
     position: relative;
 }
-.grid-table .grid-item{
+.grid-table .grid-item {
     position: relative;
     grid-column: span 1 / span 1;
 }
 
-.grid-table .grid-item img{
+.grid-table .grid-item img {
     width: 100%;
     object-fit: contain;
 }
@@ -181,7 +247,7 @@
     margin-left: 16px !important;
 }
 
-.frame-banner{
+.frame-banner {
     height: 140px;
     padding-left: 343px;
     background-color: #383e4d;
@@ -189,27 +255,27 @@
     border-radius: 16px;
 }
 
-.flex-column{
+.flex-column {
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
 
-.flex-column span{
+.flex-column span {
     font-size: 22px;
     font-weight: 600;
     color: white;
 }
 
-.flex-column .color-secondary{
+.flex-column .color-secondary {
     color: #caab72;
 }
 
-.flex-row.no-between{
+.flex-row.no-between {
     justify-content: space-around;
 }
 
-.flex-no-between{
+.flex-no-between {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -246,13 +312,13 @@
     .footer-content {
         grid-template-columns: 1fr;
     }
-    .grid-table{
+    .grid-table {
         grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 615px){
-    .title-component .title-image{
+@media (max-width: 615px) {
+    .title-component .title-image {
         left: 48% !important;
         width: 80px;
         height: 80px;
@@ -280,4 +346,85 @@
     background-repeat: no-repeat;
     margin-bottom: 32px;
     height: 440px;
+}
+
+.banner.custom {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 24px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 12px;
+    position: relative;
+    margin-bottom: 12px;
+    min-height: 400px;
+    background-image: url(/public/media/banner2.jpg);
+    overflow: hidden;
+    gap: 24px;
+    border-radius: 8px;
+}
+
+.logo-banner{
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.frame-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cards {
+    width: 400px;
+    border-radius: 8px;
+    flex-direction: column;
+    max-height: 100%;
+    gap: 12px;
+    max-width: 100%;
+    padding: 12px;
+    display: flex;
+    background-color: rgba(226, 226, 226, 0.185);
+}
+
+.cards .card-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.cards p {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.button-info-box.bt-card {
+    max-width: 200px;
+    border-radius: 4px;
+    margin-top: auto;
+}
+
+.cards.top {
+    margin-bottom: 12px;
+}
+
+
+@media (max-width: 648px) {
+    .odds-cards-wrap {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 245px) {
+    .banner.custom {
+        display: none;
+    }
 }

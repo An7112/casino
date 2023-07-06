@@ -12,6 +12,7 @@
 .slick-track {
     padding: 12px 0;
 }
+
 .slider-sport .slick-list .slick-track .slick-slide > div {
     background-color: white;
     padding: 16px;
@@ -71,6 +72,11 @@
     flex-direction: column;
     position: relative;
     gap: 14px;
+}
+.slick-slide > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slick-slide > div .mcard.match-sched-card .flex-row {

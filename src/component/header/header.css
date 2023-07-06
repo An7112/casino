@@ -3,6 +3,7 @@
     background-color: #1a202c;
     position: fixed;
     top: 0;
+    max-width: 3420px;
     z-index: 10;
 }
 

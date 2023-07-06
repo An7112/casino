@@ -59,6 +59,20 @@ function Home() {
                         </div>
                     </div>
                 </div>
+                {/* New */}
+                <div style={{ backgroundColor: 'white' }} >
+                    <div className='banner custom'>
+                    <img className='logo-banner' src='/media/logo-banner.jpg' />
+                        <div className='cards top'>
+                            <h3 className='card-title'>Lorem - Lorem</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                            <button className='button-info-box bt-card'>
+                                Play Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
                 <div className='page__table'>
                     <SliderBSlick />
                 </div>

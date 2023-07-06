@@ -58,7 +58,7 @@
     color: white;
 }
 
-@media (min-width: 680px) {
+@media (min-width: 821px) {
     .list-item{
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
